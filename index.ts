@@ -19,7 +19,7 @@ const shiki = createHighlighterCoreSync({ themes, langs, engine });
 
 const AsciidoctorShiki: SyntaxHighlighterFunctions = {
   initialize(_name, _backend, { document }) {
-    this.options = { theme: "nord" };
+    this.options = { theme: "github-light-default" };
     if (document.hasAttribute("shiki-theme")) {
       this.options.theme = document.getAttribute("shiki-theme");
     }
