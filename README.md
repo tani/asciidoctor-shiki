@@ -1,21 +1,17 @@
-# Asciidoctor Syntax Highlight Extension for Node.js
+# Asciidoctor.js Syntax Highlight Extension with Shiki
 
 ## Installation
 
-This extension is available on npmjs.com
-
-```shell
-$ node install asciidoctor-shiki
-```
+This extension is available on https://jsr.io/@tani/asciidoctor-shiki
 
 ## Usage
 
-This extension is not designed for browser.
-You must not use this extension without Node.js.
+This extension is not designed for browser. You must not use this extension
+without Node.js.
 
 ```js
-const asciidoctor = require('@asciidoctor/core')()
-const AsciidoctorShiki = require('asciidoctor-shiki')
+import asciidoctor from '@asciidoctor/core';
+improt AsciidoctorShiki from 'asciidoctor-shiki';
 asciidoctor.SyntaxHighlighter.register('shiki', AsciidoctorShiki)
 const options = {
   attributes: {
@@ -36,9 +32,8 @@ console.log(asciidoctor.convert(document, options))
 2. Set the attribute `source-highlighter`
 3. Set the attribute `shiki-theme`
 
-
 ## Copyright and License
 
-Copyright (c) 2022 TANIGUCHI Masaya. All rights reserved.
+Copyright (c) 2024 TANIGUCHI Masaya. All rights reserved.
 
 This extension is licensed under the MIT license https://git.io/mit-license
