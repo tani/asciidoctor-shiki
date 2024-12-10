@@ -1,0 +1,16 @@
+{
+  "name": "@tani/asciidoctor-shiki",
+  "version": "1.0.0",
+  "exports": "./index.ts",
+  "license": "MIT",
+  "imports": {
+    "@asciidoctor/core": "npm:@asciidoctor/core@^3.0.4",
+    "shiki": "npm:shiki@^1.24.1"
+  },
+  "publish": {
+    "include": [
+      "README.md",
+      "index.ts"
+    ]
+  }
+}
